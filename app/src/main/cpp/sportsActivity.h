@@ -9,9 +9,10 @@
 class sportsActivity {
 public:
     enum type{roadCycling, running, swimming, iceHockey};
-    int newActivity(type type, float duration, float distance, float stress, float intensity);
+    int newActivity(type type, char* location);
 
 private:
+    type type;
     float duration;
     float distance;
     float stress;

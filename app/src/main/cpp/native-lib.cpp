@@ -7,7 +7,8 @@ Java_com_haeberlen_nino_privatetrainingprogress_MainActivity_stringFromJNI(
         JNIEnv* env,
         jobject /* this */) {
     sportsActivity activity1;
-    int success = activity1.newActivity(activity1.iceHockey,2,1,1,1);
+    char location[4] = "loc";
+    int success = activity1.newActivity(activity1.iceHockey,location);
 
     char buffer [50];
     sprintf(buffer, "Current training state is: %d",success);
